@@ -15,7 +15,7 @@
     <ul class="basic-ul">
         <% for(var i = 0; i < content.length; i++) { %>
             <li >
-                <a target="_self" href="/<%= content[i] %>" ><%= content[i] %></a>
+                <a target="_self" href="<%= content[i] %>" ><%= content[i] %></a>
                 <form class="basic-form" action="/directory/delete" enctype="x-www-form-urlencoded" method="POST" onSubmit="return confirm('Are you sure you wish to delete?');">
                     <input  type="submit" value="delete">
                     <input class="basic-input" type="text" name="name" id="name" value="<%= content[i] %>">       
