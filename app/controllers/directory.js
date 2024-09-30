@@ -21,8 +21,8 @@ exports.routing = async (folders, router) => {
     results.forEach(result => {
         return router.get(`/${result}`, async function(req, res) {
             let content = await folders(`/${result}`)
-            console.log("psot results", content)
-            res.render('folders',{content});
+            console.log("psot results", content, result)
+            res.render('folders',{result,content});
           })
     })
 }
