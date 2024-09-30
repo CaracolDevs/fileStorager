@@ -1,0 +1,66 @@
+.basic-ul {
+    list-style: none;
+    padding-left: 0!important;
+    margin-bottom: 10px;
+}
+
+.basic-ul li a{
+    min-width: 100px;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.basic-ul li a:hover{
+    color: red;
+}
+
+.basic-ul li {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.basic-input {
+    display: inline-block;
+    visibility: hidden;
+    max-width: 0px;
+}
+
+.basic-form { 
+    display: inline-block;
+    border-left: 4px solid black;
+    padding-left: 10px;
+}
+
+.basic-form input{ 
+    text-transform: uppercase;
+}
+
+.container {
+    
+}
+
+.container form {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 16px!important;
+}
+
+.icon-caracol {
+    background-image: url('/images/icon-caracol.png');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.display-ul {
+    list-style: none;
+}
