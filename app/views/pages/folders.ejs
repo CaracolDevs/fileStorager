@@ -9,12 +9,16 @@
 
 </head>
 <body>
-    <h1>Archivos
-    </h1>
+    <header>
+        <div>
+            <img class="logo" src="/images/logo.jpg" alt="Logo">
+        </div>
+    </header>
     <ul class="display-ul">
         <% for(var i = 0; i < content.length; i++) { %>
             <li><span class="icon-caracol"></span><a href="<%= result %>/<%= content[i] %>"><%= content[i] %></a></li>
           <% } %>
+          <a href="javascript:history.back()">Volver</a>
     </ul>
 </body>
 </html>

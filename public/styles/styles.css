@@ -1,7 +1,45 @@
+header {
+    margin-bottom: 40px;
+}
+header div {
+    border-bottom: 4px solid orange;
+}
+header div img {
+    margin-top: 12px
+}
+
+.first {
+
+}
+
+.second {
+
+
+}
+
+form {
+    @media (max-width: 1200px) {
+    width: 100%;
+    margin-bottom: 8px;
+      }
+}
+
 .basic-ul {
     list-style: none;
-    padding-left: 0!important;
+    padding-left: 0!important;   
     margin-bottom: 10px;
+}
+
+.basic-ul {
+    a {
+        width: 180px;
+    }
+}
+
+.basic-ul {
+    span {
+        font-weight: bold;
+    }
 }
 
 .basic-ul li a{
@@ -63,4 +101,12 @@ h1 {
 
 .display-ul {
     list-style: none;
+}
+
+.logo {
+    display: inline-block;
+    width: 300px;
+    height: 130px;
+    margin-bottom: 24px;
+
 }

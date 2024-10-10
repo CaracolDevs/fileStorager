@@ -185,11 +185,25 @@ exports.checkIndex = (req, res) => {
     try {
         const checkFiles = async (directory = `./uploads`) => {
             const files = await readdir(directory);
-            console.log(files)
-            return files;
+            let stats = []
+
+            files.forEach( (file) => {
+                let stat = fs.statSync(`./uploads/${file}`)
+                //stats.push(stat)
+                //console.log("aaaa",stat)
+                let date = new Date(stat.birthtimeMs).toString(); // create Date object
+                stats.push(date.slice('0','15'))
+                console.log("cum",date)
+            })
+
+
+            let total = [files,stats]
+            
+ 
+
+            return total 
         }
         checkFiles().then((content) => {
-            console.log(content)
             res.render('index', {content})
         })
     } catch (error) {
