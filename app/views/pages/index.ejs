@@ -18,7 +18,7 @@
     <ul class="basic-ul">
         <% for(var i = 0; i < content[0].length; i++) { %>
             <li >
-                <a target="_self" href="<%= content[0][i] %>" ><span><%= content[0][i] %> <br> <%= content[1][i] %></span></a>
+                <a target="_self" class="title" href="<%= content[0][i] %>" ><span><%= content[0][i] %> <br> <%= content[1][i] %></span></a>
                 <form class="basic-form first" action="/directory/delete" enctype="x-www-form-urlencoded" method="POST" onSubmit="return confirm('Este valor se borrara DIFNITIVAMENTE, esta seguro de continuar?');">
                     <input  type="submit" value="Borrar">
                     <input class="basic-input" type="text" name="name" id="name" value="<%= content[0][i] %>">       

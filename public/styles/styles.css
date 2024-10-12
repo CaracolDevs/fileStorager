@@ -51,7 +51,8 @@ form {
 }
 
 .basic-ul li a:hover{
-    color: red;
+    transition: .3s ease-in;
+    color: #ff6b0b;
 }
 
 .basic-ul li {
