@@ -20,16 +20,16 @@
             <li >
                 <a target="_self" class="title" href="<%= content[0][i] %>" ><span><%= content[0][i] %> <br> <%= content[1][i] %></span></a>
                 <form class="basic-form first" action="/directory/delete" enctype="x-www-form-urlencoded" method="POST" onSubmit="return confirm('Este valor se borrara DIFNITIVAMENTE, esta seguro de continuar?');">
-                    <input  type="submit" value="Borrar">
+                    <input class="custom-btn btn-7" type="submit" value="Borrar">
                     <input class="basic-input" type="text" name="name" id="name" value="<%= content[0][i] %>">       
                 </form>
                 <form class="basic-form second" action="/directory/upload" enctype="multipart/form-data" method="POST">
-                    <input  type="submit" value="Cargar Archivo">
-                    <input type="file" name="files" id="files" multiple>   
+                    <input class="custom-btn btn-7" type="submit" value="Cargar DOC">
+                    <input class="btn-special" type="file" name="files" title=" " id="files" multiple>   
                     <input class="basic-input" type="text" name="name" id="name" value="<%= content[0][i] %>">       
                 </form>
                 <form class="basic-form last" action="/directory/download"  enctype="x-www-form-urlencoded" method="POST">
-                    <input  type="submit" value="Descargar">
+                    <input class="custom-btn btn-7" type="submit" value="Descargar">
                     <input class="basic-input" type="text" name="name" id="name" value="<%= content[0][i] %>">       
                 </form>
                 

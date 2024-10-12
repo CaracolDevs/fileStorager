@@ -31,13 +31,13 @@ exports.create = (req, res) => {
     const name = req.body.name
     try {
         fs.mkdir(`uploads/${name}`, (err) => {
-            if(err) throw Error(err.message)
+            console.log("ERROR:", err)
         })
     console.log('directory', name, 'created!')
     res.redirect(req.get('referer'));
     } catch (error) {
-        res.send({ message: 'not Done!' })
-        throw error
+        res.redirect(req.get('referer'));
+        throw alert("Nombre ya utilizado, intente uno nuevo")
     }
 }
 
