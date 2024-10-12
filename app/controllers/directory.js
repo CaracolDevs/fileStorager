@@ -195,6 +195,7 @@ exports.checkIndex = (req, res) => {
                 stats.push(date.slice('0','15'))
                 console.log("cum",date)
             })
+            console.log(files,stats)
 
 
             let total = [files,stats]
