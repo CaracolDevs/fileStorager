@@ -228,5 +228,17 @@ button {
 
     .spc {
         text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .a-list {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+    .a-list:hover {
+        color: red;
+        transition: .3s ease-in;
     }
     
